@@ -1,0 +1,42 @@
+name: New system request
+description: Request creation of a new system repo
+labels: ["new-system"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: System name
+      description: Proposed repo name (lowercase, hyphens)
+      placeholder: e.g. cell-fixture
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Role
+      options:
+        - Vertical (composes into products)
+        - Lateral (serves other systems)
+    validations:
+      required: true
+  - type: checkboxes
+    id: disciplines
+    attributes:
+      label: Disciplines
+      options:
+        - label: Embedded C
+        - label: Embedded Rust
+        - label: Python
+        - label: Python + JAX
+        - label: ECAD — KiCad
+        - label: ECAD — EasyEDA
+        - label: MCAD — NX
+        - label: MCAD — FreeCAD
+        - label: Simulation
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What does this system do?
+      description: One or two sentences.
+    validations:
+      required: true

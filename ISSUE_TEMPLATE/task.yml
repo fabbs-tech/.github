@@ -1,0 +1,18 @@
+name: Task
+description: A piece of work to be done
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to happen?
+      description: Describe the task. Link to the Notion task if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Done when
+      description: How do we know this is complete?
+    validations:
+      required: false

@@ -1,13 +1,13 @@
 
-# Fabbs Tech — GitHub organization
+# FABBS Tech 
 
 ## Structure
 
 Every repo in this org is one of:
 
-- **System** — a persistent, reusable thing we build (hardware, firmware, software, infrastructure).
+- **System** : a persistent, reusable thing we build (hardware, firmware, software, infrastructure).
   Named plainly: `pwr-converter`, `battery-modeling`, `dev-platforms`, `tooling`.
-- **Product** — a system packaged to solve a specific problem. Prefixed with `prod-`:
+- **Product** : a system packaged to solve a specific problem. Prefixed with `prod-`:
   `prod-cell-tester-v1`, `prod-eis-thesis`.
 
 ## Creating a new repo
